@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <rect width="256" height="256" rx="60" fill="url(#bg)" />
+  
+  <g fill="#ffffff" filter="url(#glow)">
+    <!-- Top Left -->
+    <rect x="64" y="64" width="48" height="48" rx="8" />
+    <rect x="76" y="76" width="24" height="24" rx="4" fill="#818cf8" />
+    
+    <!-- Top Right -->
+    <rect x="144" y="64" width="48" height="48" rx="8" />
+    <rect x="156" y="76" width="24" height="24" rx="4" fill="#c084fc" />
+    
+    <!-- Bottom Left -->
+    <rect x="64" y="144" width="48" height="48" rx="8" />
+    <rect x="76" y="156" width="24" height="24" rx="4" fill="#a855f7" />
+    
+    <!-- Bottom Right (Scanner effect or single blocks) -->
+    <rect x="144" y="144" width="20" height="20" rx="4" />
+    <rect x="172" y="144" width="20" height="20" rx="4" />
+    <rect x="144" y="172" width="20" height="20" rx="4" />
+    
+    <!-- Accent Dot -->
+    <circle cx="182" cy="182" r="10" fill="#10B981" />
+  </g>
+</svg>
